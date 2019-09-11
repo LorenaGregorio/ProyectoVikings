@@ -34,5 +34,12 @@ namespace VikingsProyectoProgra4
             fcoti.Show();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormReceptor recp = new FormReceptor();
+            recp.Show();
+
+        }
     }
 }
