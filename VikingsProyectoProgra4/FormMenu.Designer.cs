@@ -36,9 +36,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(181, 113);
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(94, 224);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 64);
+            this.button1.Size = new System.Drawing.Size(156, 106);
             this.button1.TabIndex = 0;
             this.button1.Text = "NUEVO USUARIO";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,21 +57,24 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(482, 113);
+            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(292, 147);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 64);
+            this.button2.Size = new System.Drawing.Size(169, 70);
             this.button2.TabIndex = 2;
-            this.button2.Text = "COTIZAR";
+            this.button2.Text = "RECEPTOR";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(341, 257);
+            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(509, 214);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 80);
+            this.button3.Size = new System.Drawing.Size(189, 116);
             this.button3.TabIndex = 3;
-            this.button3.Text = "COSTOS DE POLIZA";
+            this.button3.Text = "CALCULO DE COSTO DE POLIZA";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FormMenu
             // 
