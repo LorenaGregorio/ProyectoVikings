@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbTrans = new System.Windows.Forms.ComboBox();
             this.lblQ = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
@@ -62,7 +62,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbTrans);
             this.groupBox1.Controls.Add(this.lblQ);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnIngresar);
@@ -96,17 +96,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cotizacion Percance";
             // 
-            // comboBox1
+            // cbTrans
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbTrans.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTrans.FormattingEnabled = true;
+            this.cbTrans.Items.AddRange(new object[] {
             "Mecanico",
             "Automatico"});
-            this.comboBox1.Location = new System.Drawing.Point(473, 128);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 27);
-            this.comboBox1.TabIndex = 39;
+            this.cbTrans.Location = new System.Drawing.Point(473, 128);
+            this.cbTrans.Name = "cbTrans";
+            this.cbTrans.Size = new System.Drawing.Size(121, 27);
+            this.cbTrans.TabIndex = 39;
             // 
             // lblQ
             // 
@@ -459,7 +459,7 @@
         private System.Windows.Forms.ComboBox cbStatus;
         private System.Windows.Forms.Label lblCosto;
         private System.Windows.Forms.ComboBox cbModelo;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbTrans;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
     }
