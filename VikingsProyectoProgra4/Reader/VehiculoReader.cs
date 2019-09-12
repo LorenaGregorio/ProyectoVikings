@@ -16,28 +16,28 @@ namespace VikingsProyectoProgra4.Reader
     public class VehiculoReader : ObjectReaderWithConnection<VehiculoModel>
     {
 
-        private string DefaultCommad = "SELECT * FROM VehiculoTBL";
+        private string DefaultCommad = "SELECT * FROM Cotizacion_TBL";
 
         public VehiculoReader(DataClass.QueryRepo.TipoQuery tipo, VehiculoModel vehiculoModel)
         {
             switch (tipo)
             {
                 case TipoQuery.Todos:
-                    this.DefaultCommad = QueryProcessor.QueryAll(QueryRepo.SelectAll, "VehiculoTBL");
+                    this.DefaultCommad = QueryProcessor.QueryAll(QueryRepo.SelectAll, "Cotizacion_TBL");
                     break;
                 case TipoQuery.PorId:
-                    this.DefaultCommad = QueryProcessor.QueryByID(QueryRepo.SelectByID, "VehiculoTBL", "Id_Vehiculo", vehiculoModel.Id_Vehiculo.ToString());
+                    this.DefaultCommad = QueryProcessor.QueryByID(QueryRepo.SelectByID, "Cotizacion_TBL", "Id_Cotizacion", vehiculoModel.Id_Cotizacion.ToString());
                     break;
                 case TipoQuery.TodosConFiltros:
-                    this.DefaultCommad = QueryProcessor.QueryAll(QueryRepo.SelectAll, "VehiculoTBL", vehiculoModel);
+                    this.DefaultCommad = QueryProcessor.QueryAll(QueryRepo.SelectAll, "Cotizacion_TBL", vehiculoModel);
                     break;
                 case TipoQuery.PorIdConFiltro:
                     break;
                 case TipoQuery.AddRow:
-                    this.DefaultCommad = QueryProcessor.AddRow(QueryRepo.AddRow, "VehiculoTBL", vehiculoModel);
+                    this.DefaultCommad = QueryProcessor.AddRow(QueryRepo.AddRow, "Cotizacion_TBL", vehiculoModel);
                     break;
                 case TipoQuery.UpdateRow:
-                    this.DefaultCommad = QueryProcessor.UpdateRow(QueryRepo.UpdateRow, "VehiculoTBL", vehiculoModel);
+                    this.DefaultCommad = QueryProcessor.UpdateRow(QueryRepo.UpdateRow, "Cotizacion_TBL", vehiculoModel);
                     break;
                 default:
                     break;

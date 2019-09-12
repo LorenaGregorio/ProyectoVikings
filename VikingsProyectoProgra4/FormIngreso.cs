@@ -53,7 +53,9 @@ namespace VikingsProyectoProgra4
                     menu.Show();
                     menu.Text = "Cotizador";
                     //menu.Controls["For"]
-                    menu.Controls["label1"].Text = "Cotizador";
+                    menu.Controls["label1"].Text = "Cotizador " + dt.Rows[0][0].ToString();
+                   
+
                     menu.Controls["button2"].Visible = false;
                     MessageBox.Show("Bienvenido " + dt.Rows[0][0].ToString());
                     z = 1;
@@ -64,8 +66,8 @@ namespace VikingsProyectoProgra4
                 {
                     FormMenu menu = new FormMenu();
                     menu.Show();
-                    menu.Text = "Receptor";
-                    //menu.Controls["For"]
+                    menu.Text = "Receptor " + dt.Rows[0][0].ToString(); ;
+
                     menu.Controls["label1"].Text = "Receptor";
                     menu.Controls["button2"].Visible = true;
                     menu.Controls["button1"].Visible = false;

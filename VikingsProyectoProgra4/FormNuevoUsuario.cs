@@ -71,7 +71,7 @@ namespace VikingsProyectoProgra4
             //}
             //else
             //{
-                Conexion.Open();
+      
             UsuarioModel u1 = new UsuarioModel();
             //personaModel.IdPersona = 1;
             u1.Nombre1 = txtnombre1.Text;

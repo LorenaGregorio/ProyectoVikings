@@ -33,12 +33,16 @@ namespace VikingsProyectoProgra4
             CotizadorForm fcoti = new CotizadorForm();
             fcoti.Show();
 
+            fcoti.Controls["label14"].Text = label1.Text;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             FormReceptor recp = new FormReceptor();
             recp.Show();
+            CotizadorForm co = new CotizadorForm();
+            co.Controls["label14"].Text = label1.Text;
 
         }
     }
